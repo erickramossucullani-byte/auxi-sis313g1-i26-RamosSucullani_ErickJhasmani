@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src ="script.js"></script>
+    <h1>PREGUNTAS TEÓRICAS:</h1>
+    <ol>
+        <li><h3>Existen dos formas principales de conectar un archivo HTML con JavaScript. Explique cuáles son estas 2
+            formas y proporcione un ejemplo básico de cada una.</h3></li>
+            <p>Estas dos formas son:</p><br>
+            <ul>
+                <li>
+                    <strong>Código Interno:</strong> Se escribe el código de JavaScript directamente dentro de un archivo HTML utilizando la etiqueta <code>&lt script &gt</code>, por lo general colocada justo antes de cerrar el cuerpo <code>&lt /body &gt</code>.<br>
+                    <strong>Ejemplo;</strong>
+                    <pre>
+                        <code>
+                            &lt script &gt
+                                code.log("hola desde JavaScript interno")
+                            &lt script &gt
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <strong>Código Externo:</strong> Se escribe el código en un archivo independiente con extensión .js (por ejemplo, script.js) y se vincula al archivo HTML mediante el atributo src de la etiqueta <code>&lt script &gt</code>. Esta es la práctica más recomendada para mantener el código organizado.<br>
+                    <strong>Ejemplo:</strong>
+                    <pre>
+                        <code>
+                        &lt script src = "script.js" &gt &lt/script &gt
+                        </code>
+                    </pre>
+                </li>
+            </ul>
+
+
+        <li><h3>Explique paso a paso cómo visualizar los resultados de JavaScript utilizando la consola del navegador.</h3></li>
+        <p>La consola del navegador es una herramienta esencial para desarrolladores. Para ver los resultados impresos con funciones como console.log():</p>
+        <ol>
+            <li>
+                Abre tu archivo HTML en cualquier navegador web moderno (Chrome, Firefox, Edge, etc.).
+            </li>
+            <li>
+                Abre las Herramientas de Desarrollador (DevTools) haciendo clic derecho en cualquier parte de la página y seleccionando Inspeccionar, o utilizando los atajos de teclado:
+                <ul>
+                    <li>
+                        Windows/Linux: F12 o Ctrl + Shift + I
+                    </li>
+                    <li>
+                        Mac: Cmd + Option + I
+                    </li>
+                </ul>
+            </li>
+            <li>Busca y haz clic en la pestaña Consola (Console en inglés).</li>
+            <li>Allí podrás visualizar los mensajes enviados desde tu código y también escribir comandos de JavaScript de forma interactiva.</li>
+        </ol>
+
+
+        <li><h3>Explique qué son las variables en JavaScript y cuál es la diferencia entre var, let y const. Incluya un ejemplo
+            sencillo de cada una e indique cuál de estas formas ya no se recomienda utilizar actualmente y por qué.</h3></li>
+
+        <p>Una variable es un contenedor simbólico para almacenar datos (como textos, números o booleanos) que se pueden reutilizar y manipular a lo largo del programa.</p>
+        <strong>Diferencias entre declaraciones:</strong>
+        <ul>
+            <li><strong>var:</strong> Es la forma tradicional. Tiene un ámbito de función (function scope), permite reasignar valores y redeclarar la variable, lo que puede causar errores inesperados.</li>
+            <li><strong>let:</strong> Introducida en ES6. Tiene un ámbito de bloque (block scope), permite reasignar su valor, pero no permite redeclararla en el mismo bloque.</li>
+            <li><strong>const:</strong> También introducida en ES6. Se utiliza para constantes; su valor es fijo una vez inicializado, por lo que no se puede reasignar ni redeclarar.</li>
+        </ul>
+        <p><strong>Ejemplos:</strong></p>
+        <pre>
+            <code>var nombre = "Ana";</code>
+            <code>let edad = 25;</code>
+            <code>const pais = "México";</code>
+        </pre>
+
+    </ol>
+
+</body>
+</html>
+</body>
+</html>
