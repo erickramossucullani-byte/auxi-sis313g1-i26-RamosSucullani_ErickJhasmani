@@ -1,0 +1,142 @@
+/* ========== GENERAL (body) ========== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e8eef5;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== ENCABEZADO ========== */
+header {
+    background-color: #1f3a5f;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    margin: 0;
+    color: rgb(161, 186, 232);
+}
+
+/* ========== CONTENEDOR ========== */
+.contenedor {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* ========== TÍTULOS ========== */
+h2 {
+    font-size: 26px;
+    color: #1f3a5f;
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+
+/* ========== SOBRE MÍ ========== */
+.sobre-mi {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ========== TARJETAS DE MATERIAS ========== */
+.tarjetas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tarjeta {
+    background-color: #f4c542;
+    padding: 15px;
+    margin: 10px 1.5%;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta h3 {
+    margin: 0 0 5px 0;
+    color: #1f3a5f;
+}
+
+.tarjeta p {
+    margin: 0;
+    color: #1f3a5f;
+}
+
+.tarjeta:hover {
+    background-color: #e0555a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta:hover h3,
+.tarjeta:hover p {
+    color: #ffffff;
+}
+/* ========== LISTA DE PASATIEMPOS ========== */
+ul {
+    color: #1f3a5f;
+    margin: 15px 40px;
+    line-height: 1.8;
+}
+ul li{
+    margin: 5px 0;
+    
+}
+
+/* ========== TABLA DE HORARIO ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #d5dde8;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5fa;
+}
+
+tr:hover {
+    background-color: #ffe9a8;
+}
+
+/* ========== PIE DE PÁGINA ========== */
+footer {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
