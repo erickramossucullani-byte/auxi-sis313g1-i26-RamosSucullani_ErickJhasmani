@@ -1,0 +1,318 @@
+
+
+
+body {
+    margin: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #111;
+}
+body >h1{
+    text-align: center;
+    margin-top: 50px;
+}
+body >h3{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.contenedor {
+    margin: 50px;
+    padding: 90px;
+    min-height: 600px;
+    background: #dedede;
+}
+
+.contenedor h1 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+
+.linea {
+    width: 80px;
+    height: 4px;
+    margin: 14px auto 50px;
+    background: #1768a8;
+}
+
+.datos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    padding: 30px 40px;
+    background: #fff;
+    border-left: 4px solid #1768a8;
+    border-radius: 6px;
+}
+
+.datos span {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    color: #666;
+}
+
+.datos strong {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contenedor h3 {
+    margin: 40px 0 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.niveles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 20px;
+}
+
+.niveles a,
+.volver {
+    display: block;
+    padding: 12px 10px;
+    background: #fff;
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.niveles a:hover,
+.volver:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.caja {
+    display: grid;
+    gap: 20px;
+    height: 400px;
+    padding: 50px;
+    background: #fff;
+}
+
+.caja div {
+    border-radius: 6px;
+}
+
+.rojo {
+    background: red;
+}
+
+.amarillo {
+    background: yellow;
+}
+
+.verde {
+    background: green;
+}
+
+.volver {
+    width: 280px;
+    margin: 50px auto 0;
+    padding: 12px;
+}
+
+.nivel1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.nivel2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.nivel3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nivel3 .rojo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel3 .amarillo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel3 .verde {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nivel4 .rojo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.nivel4 .amarillo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel4 .verde {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel5 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nivel5 .rojo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel5 .amarillo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel5 .verde {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel6 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.nivel6 .rojo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel6 .amarillo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel6 .verde {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel7 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.nivel7 .rojo {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nivel7 .amarillo {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.nivel7 .verde {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.nivel8 {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "rojo rojo" "amarillo verde";
+}
+
+.nivel9 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "rojo amarillo" "rojo verde";
+}
+
+.nivel10 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "rojo amarillo" "verde verde";
+}
+
+.nivel11 {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "rojo verde" "amarillo verde";
+}
+
+.nivel12 {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: "rojo verde" "amarillo amarillo";
+}
+
+.nivel8 .rojo,
+.nivel9 .rojo,
+.nivel10 .rojo,
+.nivel11 .rojo,
+.nivel12 .rojo {
+    grid-area: rojo;
+}
+
+.nivel8 .amarillo,
+.nivel9 .amarillo,
+.nivel10 .amarillo,
+.nivel11 .amarillo,
+.nivel12 .amarillo {
+    grid-area: amarillo;
+}
+
+.nivel8 .verde,
+.nivel9 .verde,
+.nivel10 .verde,
+.nivel11 .verde,
+.nivel12 .verde {
+    grid-area: verde;
+}
